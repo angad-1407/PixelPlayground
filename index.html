@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects Portfolio</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1d2b64, #f8cdda);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* Project Cards Section */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem 0;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 15px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      opacity: 0.85;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: #ff6f61;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: #ff4b3e;
+    }
+
+    /* Footer */
+    footer {
+      margin: 2rem 0 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    .social-links {
+      margin-top: 0.8rem;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #ffdf6c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 ANGAD's Web Projects</h1>
+    <p>A collection of my HTML, CSS, and JavaScript works</p>
+  </header>
+
+  <section class="projects">
+    <div class="card">
+      <h2>🎮 Tic Tac Toe</h2>
+      <p>Play the classic game of X and O with a sleek UI and responsive design.</p>
+      <a href="Tic Tae Toe/index.html" target="_blank">Play Game</a>
+    </div>
+
+    <div class="card">
+      <h2>📚 Book List App</h2>
+      <p>Manage and organize your books easily with this dynamic book list app.</p>
+      <a href="My book list/index.html" target="_blank">View Book list</a>
+    </div>
+
+    <div class="card">
+      <h2>🎵 Spotify </h2>
+      <p>A front-end clone of Spotify with music player features and modern UI.</p>
+      <a href="spotify/index.html" target="_blank">Play Song</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Angad Aheer | Built using HTML, CSS, JS</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/angad_yadav.125/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/angad-aheer-895630317" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/angad-1407" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+</body>
+</html>

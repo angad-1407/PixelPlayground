@@ -1,4 +1,4 @@
-console.log("welcome to spotify");
+console.log("welcome to pulsify");
 
 let masterplay = document.getElementById('masterPlay');
 let myProgressbar = document.getElementById("myProgressbar");
@@ -13,11 +13,11 @@ let timeProgress = document.getElementById('timeProgress');
 let duration = document.getElementById('duration');
 
 let songs = [
-    { songName: "Mortals",                 filePath: 'https://open.spotify.com/track/69qKVdIkwx1LPb6TTyHzJO?si=7d6aa46e03404c7a',                    coverPath:'covers/1.jpg',                  artist: 'Warriyo'},
-    { songName: "The Underworld Elegance", filePath: 'songs/2.mp3',                    coverPath:'covers/2.jpg',                  artist: 'Elysian Shelter'},
-    { songName: "Invincible",              filePath: 'songs/3.mp3',                    coverPath:'covers/3.jpg',                  artist: 'Deaf Kev'},
-    { songName: "Heroes Tonight",          filePath: 'songs/4.mp3',                    coverPath:'covers/4.jpg',                  artist: 'Janji, Johnning'},
-    { songName: "MONTAGEM DIAMANTE ROSA",  filePath: 'songs/MONTAGEM DIAMANTE ROSA.mp3',coverPath:'covers/MONTAGEM DIAMANTE ROSA.jpg', artist: 'vtze archieve, Mc Ster'},
+    { songName: "Softly",                 filePath: 'songs/softly.mp3',                    coverPath:'covers/1.jpg',                  artist: 'Karan Aujla, Ikky'},
+    { songName: "Dil Diyan Gallan",       filePath: 'songs/Dil Diyan Gallan.mp3',      coverPath:'covers/2.png',                  artist: 'Atif Aslam'},
+    { songName: "Finding Her",              filePath: 'songs/Finding Her.mp3',         coverPath:'covers/3.jpeg',                  artist: 'Kushagra, Bharath, Saaheal'},
+    { songName: "Meethi Boliyaan",          filePath: 'songs/Meethi Boliyaan.mp3',        coverPath:'covers/Meethi Boliyan.jpeg',  artist: 'Amit Trivedi, Mili Nair'},
+    { songName: "Sunday",                  filePath: 'songs/Sunday.mp3',            coverPath:'covers/Sunday.jpeg',              artist: 'Aditya A, NAALAYAK'},
     { songName: "Aaj Ki Raat(From stree-2)",filePath: 'songs/Aaj Ki Raat.mp3',         coverPath:'covers/Aaj Ki Raat.jpg',            artist: 'Amitabh Bhattacharya, Sachin jigar'},
     { songName: "Dandelions",              filePath: 'songs/Dandelions-slowed+reverb.mp3',coverPath:'covers/Dandelions.jpg',          artist: 'Ruth B, Slater'},
     { songName: "Megham Karukatha",        filePath: 'songs/Megham Karukatha.mp3',     coverPath:'covers/Megham Karukatha.jpg',       artist: 'dhanush, Anirudh Ravichander'},

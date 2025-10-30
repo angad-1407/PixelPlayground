@@ -7,14 +7,29 @@
 html,body{
     height: 100%;
     width: 100%;
-    background-color: blanchedalmond;
     text-align: center;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
 }
+
+body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('bg.avif') no-repeat center center/cover;
+      filter: blur(3px);
+      z-index: -1; /* keep it behind content */
+    }
 
 h1{
     padding: 10px;
-    background-color: rgb(151, 63, 0);
     margin-bottom: 50px;
+      top: 30px;
+      color: white;
+      font-weight: 600;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 #container{
     height: 50%;
@@ -36,25 +51,38 @@ h1{
 .btn{
     width: 100px;
     height: 100px;
-    margin: 4px;
+    margin: 3px;
     border-radius: 0.9rem;
-    border: none;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     font-size: 8vmin;
-    color: red;
-    background-color: white;
+    color: #ffffff;
+    border: 2px solid #3a3a5c;
+    background-color: #1e1e2f;
+}
+.btn:hover{
+    transform: scale(1.05);
+    background-color: #2b2b45;
+    cursor: pointer;
 }
 
 #game{
     margin-top: 50px;
 }
 .game-btn{
-    padding: 0.5rem;
-    border-radius: 1rem;
-    background-color: rgb(126, 126, 126);
-    font-size: 15px;
-    color: white;
-    margin: 10px;
+    background: rgba(255, 255, 255, 0.15);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+.game-btn:hover{
+    background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
 }
 
 
@@ -65,4 +93,9 @@ h1{
     padding: 10px;
     color: chartreuse;
     font-size: 30px;
+}
+
+.turn{
+    color: #e0e0e0;
+    font-weight: 500;
 }
